@@ -290,7 +290,7 @@ public class Hero: HeroBaseController {
 }
 
 // custom transition helper, used in hero_replaceViewController
-internal extension Hero {
+public extension Hero {
   func transition(from: UIViewController, to: UIViewController, in view: UIView, completion: ((Bool) -> Void)? = nil) {
     guard !transitioning else { return }
     presenting = true
